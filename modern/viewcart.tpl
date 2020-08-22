@@ -749,11 +749,11 @@ window.langPasswordStrong = "{$LANG.pwstrengthstrong}";
             <div class="clearfix"></div>
 
             {if $showMarketingEmailOptIn}
-                {* <div class="marketing-email-optin">
+                <div class="marketing-email-optin">
                     <h4>{lang key='emailMarketing.joinOurMailingList'}</h4>
                     <p>{$marketingEmailOptInMessage}</p>
-                    <input type="checkbox" name="marketingoptin" value="1"{if $marketingEmailOptIn} checked{/if} class="toggle-switch-success" data-size="small" data-on-text="{lang key='yes'}" data-off-text="{lang key='no'}">
-                </div> *}
+                    <input type="checkbox" style="margin-left:0px!important" name="marketingoptin" value="1"{if $marketingEmailOptIn} checked{/if} class="toggle-switch-success" data-size="small" data-on-text="{lang key='yes'}" data-off-text="{lang key='no'}">
+                </div>
             {/if}
 
             {if $accepttos}
