@@ -700,11 +700,11 @@ var removeItemText = '{$LANG.cartremoveitemconfirm|escape:"quotes"}';
             {/if}
 
             {if $showMarketingEmailOptIn}
-                {* <div class="marketing-email-optin" style="margin-top:20px;">
+                <div class="marketing-email-optin" style="margin-top:20px;">
                     <h4>{lang key='emailMarketing.joinOurMailingList'}</h4>
                     <p>{$marketingEmailOptInMessage}</p>
                     <input type="checkbox" name="marketingoptin" value="1"{if $marketingEmailOptIn} checked{/if} class="toggle-switch-success" data-size="small" data-on-text="{lang key='yes'}" data-off-text="{lang key='no'}">
-                </div> *}
+                </div>
             {/if}
 
             <div class="text-center">
