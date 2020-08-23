@@ -304,12 +304,12 @@ Domain Registrations
     width: 80%;
 }
 #order-modern table.domainsuggestions th {
-    background-color: #1A4D80;
+    background-color: #4D7FC4;
     font-size: 11px;
     font-weight: bold;
     text-align: center;
     padding: 2px;
-    line-height: 20px;
+    line-height: 35px;
     color: #fff;
 }
 #order-modern table.domainsuggestions td {

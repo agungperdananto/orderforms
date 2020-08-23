@@ -89,7 +89,7 @@ completedomain();
 <div class="domainsuggestions">{$LANG.cartotherdomainsuggestions}</div>
 
 <table align="center" cellspacing="1" class="domainsuggestions">
-<tr><th width="50"></th><th>{$LANG.domainname}</th><th>{$LANG.clientarearegistrationperiod}</th></tr>
+<tr><th width="50" style="border-bottom-left-radius: 6px;border-top-left-radius: 6px;"></th><th>{$LANG.domainname}</th><th style="border-bottom-right-radius: 6px;border-top-right-radius: 6px;">{$LANG.clientarearegistrationperiod}</th></tr>
 {foreach from=$othersuggestions key=i item=other name=suggestions}
 {if $smarty.foreach.suggestions.index == 10}
     {break}
