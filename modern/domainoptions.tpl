@@ -90,7 +90,7 @@ completedomain();
 
 <table align="center" cellspacing="1" class="domainsuggestions">
 <tr><th width="50"></th><th>{$LANG.domainname}</th><th>{$LANG.clientarearegistrationperiod}</th></tr>
-{foreach from=$othersuggestions key=i item=other}
+{foreach from=$othersuggestions key=i item=other name=suggestions}
 {if $smarty.foreach.foo.index == 10}
     {break}
 {/if}
