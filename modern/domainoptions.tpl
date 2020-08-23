@@ -91,7 +91,7 @@ completedomain();
 <table align="center" cellspacing="1" class="domainsuggestions">
 <tr><th width="50"></th><th>{$LANG.domainname}</th><th>{$LANG.clientarearegistrationperiod}</th></tr>
 {foreach from=$othersuggestions key=i item=other name=suggestions}
-{if $smarty.foreach.foo.index == 10}
+{if $smarty.foreach.suggestions.index == 10}
     {break}
 {/if}
 <tr><td><input type="checkbox" name="domains[]" value="{$other.domain}" /></td><td>{$other.domain}</td><td><select name="domainsregperiod[{$other.domain}]">{foreach from=$other.regoptions key=period item=regoption}{if $regoption.register}<option value="{$period}">{$period} {$LANG.orderyears} @ {$regoption.register}</option>{/if}{/foreach}</select></td></tr>
