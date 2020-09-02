@@ -33,7 +33,7 @@
 <div class="domainavailable">{$LANG.cartcongratsdomainavailable|sprintf2:$domain}</div>
 <input type="hidden" name="domains[]" value="{$domain}" />
 <div class="domainregperiod">{$LANG.cartregisterhowlong}</div>
-<div class="domainregperiod"><select name="domainsregperiod[{$domain}]" id="regperiod" class="form-control select-inline" style="width:30%">{foreach key=period item=regoption from=$regoptions}{if $regoption.register}<option value="{$period}">{$period} {$LANG.orderyears} @ {$regoption.register}</option>{/if}{/foreach}</select></div>
+<div class="domainregperiod" ><select name="domainsregperiod[{$domain}]" id="regperiod" class="form-control select-inline" style="margin-right:auto;margin-left:auto;">{foreach key=period item=regoption from=$regoptions}{if $regoption.register}<option value="{$period}">{$period} {$LANG.orderyears} @ {$regoption.register}</option>{/if}{/foreach}</select></div>
 {assign var='continueok' value=true}
 
 {elseif $status eq "unavailable"}
